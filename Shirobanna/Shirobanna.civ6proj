@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Shirobana</Name>
+    <Guid>3b1e4765-dc38-4c49-97e1-3fcb33f1df8c</Guid>
+    <ProjectGuid>c21d4018-3016-4b3c-8a15-d88fb4f6ef9c</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>a mod for cv6</Teaser>
+    <Description>a mod for cv6</Description>
+    <Authors>Mr_bl</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Shirobanna</AssemblyName>
+    <RootNamespace>Shirobanna</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="config"><File>Shirobana_Config.xml</File></UpdateDatabase><UpdateText id="text"><File>Shirobana_Text.xml</File></UpdateText><UpdateIcons id="icon"><File>Shirobana_Icons.xml</File></UpdateIcons><UpdateArt id="art"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="database"><File>Shirobana_Civilization.xml</File><File>Shirobana_Leaders.xml</File><File>Shirobana_Units.xml</File><File>Shirobana_Buildings.xml</File></UpdateDatabase><UpdateText id="text"><File>Shirobana_Text.xml</File></UpdateText><UpdateIcons id="icon"><File>Shirobana_Icons.xml</File></UpdateIcons><UpdateArt id="art"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Shirobanna.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Artdefs\Buildings.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Artdefs\Civilizations.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Artdefs\FallbackLeaders.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Artdefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Buildings.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Civilization.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Leaders.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Units.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Artdefs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

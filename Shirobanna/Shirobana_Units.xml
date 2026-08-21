@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shirobana_Units -->
+<!-- Author: asus -->
+<!-- DateCreated: 8/21/2026 8:48:55 PM -->
+<GameData>
+	<!-- Almost all gameplay types should first be added to the types table. -->
+	<!-- This serves as a central way to reference any type -->
+	<Types>
+		<Row Type="UNIT_SHIROBANA" Kind="KIND_UNIT" />
+	</Types>
+
+	<UnitAiInfos>
+		<Row UnitType="UNIT_SHIROBANA" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_LAND_COMBAT"/>
+	</UnitAiInfos>
+
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_SHIROBANA" ReplacesUnitType="UNIT_ARCHER"/>
+	</UnitReplaces>
+
+	<TypeTags>
+		<Row Type="UNIT_SHIROBANA" Tag="CLASS_RANGED"/>
+	</TypeTags>
+
+	<!-- Define the actual unit. -->
+	<Units>
+		<Row UnitType="UNIT_SHIROBANA" 
+			 Cost="50" 
+			 Maintenance="0" 
+			 BaseMoves="3" 
+			 BaseSightRange="4" 
+			 ZoneOfControl="true" 
+			 Domain="DOMAIN_LAND" 
+			 Combat="25" RangedCombat="35" 
+			 Range="5" FormationClass="FORMATION_CLASS_LAND_COMBAT" 
+			 PromotionClass="PROMOTION_CLASS_RANGED" AdvisorType="ADVISOR_CONQUEST" 
+			 Name="LOC_UNIT_SHIROBANA_NAME" Description="LOC_UNIT_SHIROBANA_DESCRIPTION" 
+			 PurchaseYield="YIELD_GOLD" TraitType="TRAIT_UNIT_SHIROBANA"/>
+	</Units>
+
+</GameData>

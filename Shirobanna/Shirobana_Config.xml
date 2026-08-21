@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shirobana_Config -->
+<!-- Author: asus -->
+<!-- DateCreated: 8/21/2026 8:46:58 PM -->
+<GameData>
+	<Players>
+		<Row>
+			<CivilizationType>CIVILIZATION_SHIROBANA</CivilizationType>
+			<CivilizationName>LOC_CIVILIZATION_SHIROBANA_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_SHIROBANA</CivilizationIcon>
+
+			<LeaderType>LEADER_SHIROBANA</LeaderType>
+			<LeaderName>LOC_LEADER_SHIROBANA_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_SHIROBANA</LeaderIcon>
+
+			<CivilizationAbilityName>LOC_CIVILIZATION_ABILITY_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_CIVILIZATION_ABILITY_DESCRIPTION</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_SHIROBANA</CivilizationAbilityIcon>
+
+			<LeaderAbilityName>LOC_LEADER_ABILITY_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_LEADER_ABILITY_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_SHIROBANA</LeaderAbilityIcon>
+
+			<Portrait>IMG_SELECTION_FOREGROUND_SHIROBANA</Portrait>
+		</Row>
+
+		<!-- For DLC 'Rise And Fall'-->
+		<Row>
+			<Domain>Players:Expansion1_Players</Domain>
+
+			<CivilizationType>CIVILIZATION_SHIROBANA</CivilizationType>
+			<CivilizationName>LOC_CIVILIZATION_SHIROBANA_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_SHIROBANA</CivilizationIcon>
+
+			<LeaderType>LEADER_SHIROBANA</LeaderType>
+			<LeaderName>LOC_LEADER_SHIROBANA_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_SHIROBANA</LeaderIcon>
+
+			<CivilizationAbilityName>LOC_CIVILIZATION_ABILITY_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_CIVILIZATION_ABILITY_DESCRIPTION</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_SHIROBANA</CivilizationAbilityIcon>
+
+			<LeaderAbilityName>LOC_LEADER_ABILITY_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_LEADER_ABILITY_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_SHIROBANA</LeaderAbilityIcon>
+
+			<Portrait>IMG_SELECTION_FOREGROUND_SHIROBANA</Portrait>
+		</Row>
+	</Players>
+
+	<PlayerItems>
+		<Row>
+			<CivilizationType>CIVILIZATION_SHIROBANA</CivilizationType>
+			<LeaderType>LEADER_SHIROBANA</LeaderType>
+			<Type>BUILDING_SCHOOL</Type>
+			<Name>LOC_BUILDING_SCHOOL_NAME</Name>
+			<Description>LOC_BUILDING_SCHOOL_DESCRIPTION</Description>
+			<Icon>ICON_BUILDING_SCHOOL</Icon>
+			<SortIndex>10</SortIndex>
+		</Row>
+
+		<Row>
+			<Domain>Players:Expansion1_Players</Domain>
+			<CivilizationType>CIVILIZATION_SHIROBANA</CivilizationType>
+			<LeaderType>LEADER_SHIROBANA</LeaderType>
+			<Type>BUILDING_SCHOOL</Type>
+			<Name>LOC_BUILDING_SCHOOL_NAME</Name>
+			<Description>LOC_BUILDING_SCHOOL_DESCRIPTION</Description>
+			<Icon>ICON_BUILDING_SCHOOL</Icon>
+			<SortIndex>10</SortIndex>
+		</Row>
+	</PlayerItems>
+</GameData>
