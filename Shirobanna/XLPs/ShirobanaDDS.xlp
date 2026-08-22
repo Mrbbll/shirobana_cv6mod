@@ -10,6 +10,90 @@
 	<m_PackageName text="ShirobanaDDS"/>
 	<m_Entries>
 		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_128"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_200"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_22"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_256"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_30"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_32"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_36"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_44"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_45"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_48"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_50"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_64"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_80"/>
+			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_256"/>
+			<m_ObjectName text="ICON_SHIROBANA_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_32"/>
+			<m_ObjectName text="ICON_SHIROBANA_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_45"/>
+			<m_ObjectName text="ICON_SHIROBANA_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_48"/>
+			<m_ObjectName text="ICON_SHIROBANA_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_50"/>
+			<m_ObjectName text="ICON_SHIROBANA_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_55"/>
+			<m_ObjectName text="ICON_SHIROBANA_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_64"/>
+			<m_ObjectName text="ICON_SHIROBANA_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_SHIROBANA_80"/>
+			<m_ObjectName text="ICON_SHIROBANA_80"/>
+		</Element>
+		<Element>
 			<m_EntryID text="ICON_UNIT_SHIROBANA_22"/>
 			<m_ObjectName text="ICON_UNIT_SHIROBANA_22"/>
 		</Element>
@@ -66,92 +150,12 @@
 			<m_ObjectName text="IMG_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_SHIROBANA_256"/>
-			<m_ObjectName text="ICON_SHIROBANA_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_32"/>
-			<m_ObjectName text="ICON_SHIROBANA_32"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_45"/>
-			<m_ObjectName text="ICON_SHIROBANA_45"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_48"/>
-			<m_ObjectName text="ICON_SHIROBANA_48"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_50"/>
-			<m_ObjectName text="ICON_SHIROBANA_50"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_55"/>
-			<m_ObjectName text="ICON_SHIROBANA_55"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_64"/>
-			<m_ObjectName text="ICON_SHIROBANA_64"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_SHIROBANA_80"/>
-			<m_ObjectName text="ICON_SHIROBANA_80"/>
-		</Element>
-		<Element>
 			<m_EntryID text="IMG_SELECTION_FOREGROUND_SHIROBANA"/>
 			<m_ObjectName text="IMG_SELECTION_FOREGROUND_SHIROBANA"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_128"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_128"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_200"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_200"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_22"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_22"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_256"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_256"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_30"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_30"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_32"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_32"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_36"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_36"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_44"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_44"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_45"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_45"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_48"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_48"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_50"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_50"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_64"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_64"/>
-		</Element>
-		<Element>
-			<m_EntryID text="ICON_CIVILIZATION_SHIROBANA_80"/>
-			<m_ObjectName text="ICON_CIVILIZATION_SHIROBANA_80"/>
+			<m_EntryID text="IMG_SELECTION_FOREGROUND_SHIROBANA_"/>
+			<m_ObjectName text="IMG_SELECTION_FOREGROUND_SHIROBANA_"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

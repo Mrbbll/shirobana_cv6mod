@@ -24,7 +24,7 @@
 			<Text>白花的</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_SHIROBANA_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>白花的世界观</Text>
+			<Text>魂人世界</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_SHIROBANA_NAME" Language="zh_Hans_CN">
 			<Text>白花</Text>
@@ -80,23 +80,23 @@
 			<Text>可爱的白花。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_UNIT_GHOST_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_UNIT_SHIROBANA_GHOST_NAME" Language="zh_Hans_CN">
 			<Text>魂人</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_UNIT_GHOST_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_GHOST_NAME" Language="zh_Hans_CN">
 			<Text>魂人</Text>
 		</Replace>
-		<Replace Tag="LOC_UNIT_GHOST_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_UNIT_SHIROBANA_GHOST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>魂人，死后的人。</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_UNIT_GHOST_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_GHOST_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>魂人，死后的人。</Text>
 		</Replace>
 
-		<Replace Tag="LOC_BUILDING_SCHOOL_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_BUILDING_SHIROBANA_SCHOOL_NAME" Language="zh_Hans_CN">
 			<Text>彩香女子学院</Text>
 		</Replace>
-		<Replace Tag="LOC_BUILDING_SCHOOL_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_BUILDING_SHIROBANA_SCHOOL_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>彩香女子学院，可以产生和招募魂人。</Text>
 		</Replace>
 

@@ -6,8 +6,8 @@
 	<Types>
 		<Row Type="CIVILIZATION_SHIROBANA" Kind="KIND_CIVILIZATION"/>
 		<Row Type="TRAIT_UNIT_SHIROBANA" Kind="KIND_TRAIT"/>
-		<Row Type="TRAIT_UNIT_GHOST" Kind="KIND_TRAIT"/>
-		<Row Type="TRAIT_BUILDING_SCHOOL" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_UNIT_SHIROBANA_GHOST" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_BUILDING_SHIROBANA_SCHOOL" Kind="KIND_TRAIT"/>
 	</Types>
 
 
@@ -23,13 +23,13 @@
 	<!-- Traits Definitions -->
 	<Traits>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA" Name="LOC_TRAIT_UNIT_SHIROBANA_NAME" Description="LOC_TRAIT_UNIT_SHIROBANA_DESCRIPTION"/>
-		<Row TraitType="TRAIT_UNIT_GHOST" Name="LOC_TRAIT_UNIT_GHOST_NAME" Description="LOC_TRAIT_UNIT_GHOST_DESCRIPTION"/>
-		<Row TraitType="TRAIT_BUILDING_SCHOOL" Name="LOC_BUILDING_SCHOOL_NAME" Description="LOC_BUILDING_SCHOOL_DESCRIPTION"/>
+		<Row TraitType="TRAIT_UNIT_SHIROBANA_GHOST" Name="LOC_TRAIT_UNIT_SHIROBANA_GHOST_NAME" Description="LOC_TRAIT_UNIT_SHIROBANA_GHOST_DESCRIPTION"/>
+		<Row TraitType="TRAIT_BUILDING_SHIROBANA_SCHOOL" Name="LOC_BUILDING_SHIROBANA_SCHOOL_NAME" Description="LOC_BUILDING_SHIROBANA_SCHOOL_DESCRIPTION"/>
 	</Traits>
 	<CivilizationTraits>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_UNIT_SHIROBANA"/>
-		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_UNIT_GHOST"/>
-		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_BUILDING_SCHOOL"/>
+		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_UNIT_SHIROBANA_GHOST"/>
+		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_BUILDING_SHIROBANA_SCHOOL"/>
 	</CivilizationTraits>
 
 
@@ -89,4 +89,41 @@
 	<DiplomacyInfo>
 		<Row Type="LEADER_SHIROBANA" BackgroundImage="IMG_DIPLOMACY_FOREGROUND.dds"/>
 	</DiplomacyInfo>
+
+	<!-- modifiers-->>
+	<TraitModifiers>
+	<Row TraitType="TRAIT_UNIT_SHIROBANA"
+         ModifierId="SHIROBANA_FOOD_PER_POPULATION"/>
+
+	<Row TraitType="TRAIT_UNIT_SHIROBANA"
+         ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"/>
+	</TraitModifiers>
+
+	<Modifiers>
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
+			 ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
+			 ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
+			 Name="YieldType"
+			 Value="YIELD_PRODUCTION"/>
+
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
+			 Name="Amount"
+			 Value="1"/>
+
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
+			 Name="YieldType"
+			 Value="YIELD_FOOD"/>
+
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
+			 Name="Amount"
+			 Value="1"/>
+	</ModifierArguments>
+
+
+
 </GameInfo>
