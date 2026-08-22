@@ -19,7 +19,7 @@
     <AssemblyName>Shirobanna</AssemblyName>
     <RootNamespace>Shirobanna</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="config"><File>Shirobana_Config.xml</File></UpdateDatabase><UpdateText id="text"><File>Shirobana_Text.xml</File></UpdateText><UpdateIcons id="icon"><File>Shirobana_Icons.xml</File></UpdateIcons><UpdateArt id="art"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="database"><File>Shirobana_Civilization.xml</File><File>Shirobana_Leaders.xml</File><File>Shirobana_Units.xml</File><File>Shirobana_Buildings.xml</File></UpdateDatabase><UpdateText id="text"><File>Shirobana_Text.xml</File></UpdateText><UpdateIcons id="icon"><File>Shirobana_Icons.xml</File></UpdateIcons><UpdateArt id="art"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="database"><File>Shirobana_Civilization.xml</File><File>Shirobana_Leaders.xml</File><File>Shirobana_Units.xml</File><File>Shirobana_Buildings.xml</File><File>Shirobana_Unlocks.xml</File></UpdateDatabase><AddGameplayScripts id="gameplay"><File>Shirobana_Gameplay.lua</File></AddGameplayScripts><UpdateText id="text"><File>Shirobana_Text.xml</File></UpdateText><UpdateIcons id="icon"><File>Shirobana_Icons.xml</File></UpdateIcons><UpdateArt id="art"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -59,6 +59,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Shirobana_Units.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Unlocks.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Shirobana_Gameplay.lua">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

@@ -10,6 +10,10 @@
 		<Row Type="UNIT_SHIROBANA_GHOST" Kind="KIND_UNIT"/>
 	</Types>
 
+		<Tags>
+			<Row Tag="CLASS_SHIROBANA" Vocabulary="ABILITY_CLASS"/>
+		</Tags>
+
 	<UnitAiInfos>
 		<Row UnitType="UNIT_SHIROBANA" AiType="UNITAI_COMBAT"/>
 		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_RANGED"/>
@@ -27,6 +31,7 @@
 
 	<TypeTags>
 		<Row Type="UNIT_SHIROBANA" Tag="CLASS_RANGED"/>
+			<Row Type="UNIT_SHIROBANA" Tag="CLASS_SHIROBANA"/>
 		<Row Type="UNIT_SHIROBANA_GHOST" Tag="CLASS_RANGED"/>
 
 	</TypeTags>
@@ -44,7 +49,7 @@
 			 Range="5" FormationClass="FORMATION_CLASS_LAND_COMBAT" 
 			 PromotionClass="PROMOTION_CLASS_RANGED" AdvisorType="ADVISOR_CONQUEST" 
 			 Name="LOC_UNIT_SHIROBANA_NAME" Description="LOC_UNIT_SHIROBANA_DESCRIPTION" 
-			 PurchaseYield="YIELD_GOLD" TraitType="TRAIT_UNIT_SHIROBANA"/>
+			 TraitType="TRAIT_UNIT_SHIROBANA" CanCapture="False" CanTrain="False"/>
 
 		<Row UnitType="UNIT_SHIROBANA_GHOST"
 			 Cost="50"
@@ -65,5 +70,8 @@
 			 TraitType="TRAIT_UNIT_SHIROBANA_GHOST"/>
 
 	</Units>
+	<UnitRetreats_XP1>
+		<Row UnitRetreatType="UNIT_RETREAT_VAMPIRE_TO_CAPITAL" UnitType="UNIT_SHIROBANA" BuildingType="BUILDING_PALACE"/>
+	</UnitRetreats_XP1>
 
 </GameData>

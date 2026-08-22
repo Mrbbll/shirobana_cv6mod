@@ -10,8 +10,6 @@
 		<Row Type="TRAIT_BUILDING_SHIROBANA_SCHOOL" Kind="KIND_TRAIT"/>
 	</Types>
 
-
-	<!-- Civilization Base Info -->
 	<Civilizations>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" Name="LOC_CIVILIZATION_SHIROBANA_NAME" Description="LOC_CIVILIZATION_SHIROBANA_DESCRIPTION" Adjective="LOC_CIVILIZATION_SHIROBANA_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" RandomCityNameDepth="10" Ethnicity="ETHNICITY_ASIAN"/>
 	</Civilizations>
@@ -19,8 +17,6 @@
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" LeaderType="LEADER_SHIROBANA" CapitalName="LOC_CITY_NAME_CITY1"/>
 	</CivilizationLeaders>
 
-
-	<!-- Traits Definitions -->
 	<Traits>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA" Name="LOC_TRAIT_UNIT_SHIROBANA_NAME" Description="LOC_TRAIT_UNIT_SHIROBANA_DESCRIPTION"/>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA_GHOST" Name="LOC_TRAIT_UNIT_SHIROBANA_GHOST_NAME" Description="LOC_TRAIT_UNIT_SHIROBANA_GHOST_DESCRIPTION"/>
@@ -32,8 +28,6 @@
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" TraitType="TRAIT_BUILDING_SHIROBANA_SCHOOL"/>
 	</CivilizationTraits>
 
-
-	<!-- Cities -->
 	<CityNames>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CityName="LOC_CITY_NAME_CITY1"/>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CityName="LOC_CITY_NAME_CITY2"/>
@@ -46,7 +40,6 @@
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CityName="LOC_CITY_NAME_CITY9"/>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CityName="LOC_CITY_NAME_CITY10"/>
 	</CityNames>
-	
 	<CivilizationCitizenNames>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CitizenName="LOC_CITIZEN_SHIROBANA_MALE_1"/>
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CitizenName="LOC_CITIZEN_SHIROBANA_MALE_2"/>
@@ -58,72 +51,51 @@
 		<Row CivilizationType="CIVILIZATION_SHIROBANA" CitizenName="LOC_CITIZEN_SHIROBANA_FEMALE_4"/>
 	</CivilizationCitizenNames>
 
-
-	<!-- Color Style-->
 	<Colors>
-		<Row>
-			<Type>COLOR_PLAYER_SHIROBANA_PRIMARY</Type>
-			<Color>244,244,244,255</Color>
-		</Row>
-		<Row>
-			<Type>COLOR_PLAYER_SHIROBANA_SECONDARY</Type>
-			<Color>0,0,0,255</Color>
-		</Row>
+		<Row Type="COLOR_PLAYER_SHIROBANA_PRIMARY" Color="244,244,244,255"/>
+		<Row Type="COLOR_PLAYER_SHIROBANA_SECONDARY" Color="0,0,0,255"/>
 	</Colors>
 	<PlayerColors>
-		<Row>
-			<Type>LEADER_SHIROBANA</Type>
-			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_SHIROBANA_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_SHIROBANA_SECONDARY</SecondaryColor>
-			<TextColor>COLOR_PLAYER_WHITE_TEXT</TextColor>
-		</Row>
+		<Row Type="LEADER_SHIROBANA" Usage="Unique" PrimaryColor="COLOR_PLAYER_SHIROBANA_PRIMARY" SecondaryColor="COLOR_PLAYER_SHIROBANA_SECONDARY" TextColor="COLOR_PLAYER_WHITE_TEXT"/>
 	</PlayerColors>
 
-
-	<!-- Simple way to define the background on Loading and Diplomacy Screen -->
 	<LoadingInfo>
-		<Row LeaderType="LEADER_SHIROBANA" ForegroundImage="IMG_LOADING_FOREGROUND.dds" 
-			 BackgroundImage="IMG_LOADING_FOREGROUND.dds"    EraText="LOC_LOADING_INFO_LEADER_DEFAULT" PlayDawnOfManAudio="1"/>
+		<Row LeaderType="LEADER_SHIROBANA" ForegroundImage="IMG_LOADING_FOREGROUND.dds" BackgroundImage="IMG_LOADING_FOREGROUND.dds" EraText="LOC_LOADING_INFO_LEADER_DEFAULT" PlayDawnOfManAudio="1"/>
 	</LoadingInfo>
 	<DiplomacyInfo>
 		<Row Type="LEADER_SHIROBANA" BackgroundImage="IMG_DIPLOMACY_FOREGROUND.dds"/>
 	</DiplomacyInfo>
 
-	<!-- modifiers-->>
 	<TraitModifiers>
-	<Row TraitType="TRAIT_UNIT_SHIROBANA"
-         ModifierId="SHIROBANA_FOOD_PER_POPULATION"/>
-
-	<Row TraitType="TRAIT_UNIT_SHIROBANA"
-         ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"/>
+		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_FOOD_PER_POPULATION"/>
+		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"/>
+		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_GRANT_UNIT"/>
 	</TraitModifiers>
-
 	<Modifiers>
-		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
-			 ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
-		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
-			 ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
+		<Row ModifierId="SHIROBANA_GRANT_UNIT" ModifierType="MODIFIER_PLAYER_GRANT_UNIT_IN_CAPITAL" Permanent="true"/>
 	</Modifiers>
-
 	<ModifierArguments>
-		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
-			 Name="YieldType"
-			 Value="YIELD_PRODUCTION"/>
-
-		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"
-			 Name="Amount"
-			 Value="1"/>
-
-		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
-			 Name="YieldType"
-			 Value="YIELD_FOOD"/>
-
-		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION"
-			 Name="Amount"
-			 Value="1"/>
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION" Name="YieldType" Value="YIELD_PRODUCTION"/>
+		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION" Name="Amount" Value="2"/>
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION" Name="YieldType" Value="YIELD_FOOD"/>
+		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION" Name="Amount" Value="1"/>
+		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="AllowUniqueOverride" Value="false"/>
+		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="Amount" Value="1"/>
+		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="UnitType" Value="UNIT_SHIROBANA"/>
 	</ModifierArguments>
 
-
-
+	<RequirementSets>
+		<Row RequirementSetId="SHIROBANA_UNIT_REQUIREMENTS" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row RequirementSetId="SHIROBANA_UNIT_REQUIREMENTS" RequirementId="SHIROBANA_UNIT_TAG_REQUIREMENT"/>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row RequirementId="SHIROBANA_UNIT_TAG_REQUIREMENT" RequirementType="REQUIREMENT_UNIT_TAG_MATCHES"/>
+	</Requirements>
+	<RequirementArguments>
+		<Row RequirementId="SHIROBANA_UNIT_TAG_REQUIREMENT" Name="Tag" Value="CLASS_SHIROBANA"/>
+	</RequirementArguments>
 </GameInfo>

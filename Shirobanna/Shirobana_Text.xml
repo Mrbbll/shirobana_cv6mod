@@ -37,67 +37,67 @@
 		</Replace>
 
 		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>诺维格瑞</Text>
+			<Text>彩香町</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>维吉玛</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY2" Language="zh_Hans_CN">
+			<Text>彩香女子学园</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>奥森福特</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY3" Language="zh_Hans_CN">
+			<Text>天然温泉乡</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>范格堡</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY4" Language="zh_Hans_CN">
+			<Text>蒲公英原</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>凯尔卓</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY5" Language="zh_Hans_CN">
+			<Text>温泉宿</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>凯尔莫汉</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY6" Language="zh_Hans_CN">
+			<Text>保健室</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>辛特拉</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY7" Language="zh_Hans_CN">
+			<Text>彩香神社</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>鲍克兰</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY8" Language="zh_Hans_CN">
+			<Text>彩香旧街</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>多尔·布雷坦纳</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY9" Language="zh_Hans_CN">
+			<Text>天然温泉街</Text>
 		</Replace>
-		<Replace Tag="LOC_CITY_NAME_CITY1" Language="zh_Hans_CN">
-			<Text>威伦</Text>
+		<Replace Tag="LOC_CITY_NAME_CITY10" Language="zh_Hans_CN">
+			<Text>花丘</Text>
 		</Replace>
 
 		<Replace Tag="LOC_UNIT_SHIROBANA_NAME" Language="zh_Hans_CN">
 			<Text>白花</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_NAME" Language="zh_Hans_CN">
-			<Text>白花</Text>
+			<Text>特殊单位：白花</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SHIROBANA_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>可爱的白花。</Text>
+			<Text>可爱的白花，会随着时代推进提升自己15战斗力。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>可爱的白花。</Text>
+			<Text>可爱的白花一直伴随着你，随着时代推进提升自己15战斗力，单位唯一，开局生成，死亡后会回到首都。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_UNIT_SHIROBANA_GHOST_NAME" Language="zh_Hans_CN">
 			<Text>魂人</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_GHOST_NAME" Language="zh_Hans_CN">
-			<Text>魂人</Text>
+			<Text>单位死后化作的魂人</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_SHIROBANA_GHOST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>魂人，死后的人。</Text>
+			<Text>魂人，己方单位死后化作的人。</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_UNIT_SHIROBANA_GHOST_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>魂人，死后的人。</Text>
+			<Text>魂人，己方单位死后化作的人，在彩香女子学院建成后可以产生和招募。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BUILDING_SHIROBANA_SCHOOL_NAME" Language="zh_Hans_CN">
 			<Text>彩香女子学院</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SHIROBANA_SCHOOL_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>彩香女子学院，可以产生和招募魂人。</Text>
+			<Text>彩香女子学院，可以产生和招募魂人，还能提供4科技值2文化值。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_CITIZEN_SHIROBANA_MALE_1" Language="zh_Hans_CN">
