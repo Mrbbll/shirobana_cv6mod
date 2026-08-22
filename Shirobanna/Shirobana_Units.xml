@@ -41,7 +41,7 @@
 		<Row UnitType="UNIT_SHIROBANA" 
 			 Cost="40" 
 			 Maintenance="0" 
-			 BaseMoves="3" 
+			 BaseMoves="20" 
 			 BaseSightRange="6" 
 			 ZoneOfControl="true" 
 			 Domain="DOMAIN_LAND" 

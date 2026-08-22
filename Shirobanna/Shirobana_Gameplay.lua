@@ -5,37 +5,6 @@ local SHIROBANA_CIVILIZATION = "CIVILIZATION_SHIROBANA";
 local SHIROBANA_UNIT = "UNIT_SHIROBANA";
 local SHIROBANA_UNIT_HASH = GameInfo.Units[SHIROBANA_UNIT].Hash;
 
-local SHIROBANA_ERA_PROGRESS_PROPERTY = "SHIROBANA_ERA_COMBAT_STEPS";
-local SHIROBANA_ERA_COMBAT_AMOUNT = 15;
-
-local ERA_ORDER = {
-	"ERA_ANCIENT",
-	"ERA_CLASSICAL",
-	"ERA_MEDIEVAL",
-	"ERA_RENAISSANCE",
-	"ERA_INDUSTRIAL",
-	"ERA_MODERN",
-	"ERA_ATOMIC",
-	"ERA_INFORMATION",
-	"ERA_FUTURE"
-};
-
-local ERA_INDEX_BY_TYPE = {};
-for eraIndex, eraType in ipairs(ERA_ORDER) do
-	ERA_INDEX_BY_TYPE[eraType] = eraIndex;
-end
-
-local ERA_COMBAT_MODIFIERS = {
-	ERA_CLASSICAL = "SHIROBANA_ERA_CLASSICAL_COMBAT",
-	ERA_MEDIEVAL = "SHIROBANA_ERA_MEDIEVAL_COMBAT",
-	ERA_RENAISSANCE = "SHIROBANA_ERA_RENAISSANCE_COMBAT",
-	ERA_INDUSTRIAL = "SHIROBANA_ERA_INDUSTRIAL_COMBAT",
-	ERA_MODERN = "SHIROBANA_ERA_MODERN_COMBAT",
-	ERA_ATOMIC = "SHIROBANA_ERA_ATOMIC_COMBAT",
-	ERA_INFORMATION = "SHIROBANA_ERA_INFORMATION_COMBAT",
-	ERA_FUTURE = "SHIROBANA_ERA_FUTURE_COMBAT"
-};
-
 local SHIROBANA_UNIT_ID_PROPERTY = "SHIROBANA_UNIT_ID";
 local SHIROBANA_RESPAWN_PROPERTY = "SHIROBANA_RESPAWN_PENDING";
 local SPAWN_IN_PROGRESS = {};
@@ -61,7 +30,6 @@ local function GetCapital(playerID)
 		return capital;
 	end
 
-	-- Fallback for rulesets where GetCapitalCity is not ready on the first turn.
 	for _, city in cities:Members() do
 		if city:IsCapital() then
 			return city;
@@ -74,21 +42,16 @@ end
 local function FindShirobanaUnit(playerID)
 	local player = Players[playerID];
 	if player == nil then
-		return nil, 0;
+		return nil;
 	end
 
-	local foundUnit = nil;
-	local unitCount = 0;
 	for _, unit in player:GetUnits():Members() do
 		if unit:GetTypeHash() == SHIROBANA_UNIT_HASH then
-			if foundUnit == nil then
-				foundUnit = unit;
-			end
-			unitCount = unitCount + 1;
+			return unit;
 		end
 	end
 
-	return foundUnit, unitCount;
+	return nil;
 end
 
 local function RememberUnit(playerID, unit)
@@ -144,8 +107,6 @@ local function EnsureShirobanaUnit(playerID, forceRespawn, spawnX, spawnY)
 		return existingUnit;
 	end
 
-	-- CanTrain=False prevents normal creation. This guard is the only creation path.
-	-- A pending flag makes a delayed retry after a death remain a 1 HP respawn.
 	local isRespawn = forceRespawn or player:GetProperty(SHIROBANA_RESPAWN_PROPERTY) == 1;
 	local unit = SpawnShirobana(playerID, isRespawn, spawnX, spawnY);
 	if unit == nil and isRespawn then
@@ -183,15 +144,12 @@ local function OnUnitRemovedFromMap(playerID, unitID)
 		return;
 	end
 
-	local player = Players[playerID];
-	local trackedUnitID = player:GetProperty(SHIROBANA_UNIT_ID_PROPERTY);
+	local trackedUnitID = Players[playerID]:GetProperty(SHIROBANA_UNIT_ID_PROPERTY);
 	if trackedUnitID ~= nil and unitID ~= nil and tonumber(trackedUnitID) == tonumber(unitID) then
 		MarkUnitKilled(playerID, unitID);
 	end
 end
 
--- Gameplay event form: killedPlayerID, killedUnitID, killerPlayerID, killerUnitID.
--- Some UI contexts pass a unit object instead, so accept that form as well.
 local function OnUnitKilledInCombat(killedPlayerID, killedUnitID)
 	if type(killedPlayerID) == "number" then
 		MarkUnitKilled(killedPlayerID, killedUnitID);
@@ -201,112 +159,6 @@ local function OnUnitKilledInCombat(killedPlayerID, killedUnitID)
 	local killedUnit = killedPlayerID;
 	if killedUnit ~= nil and killedUnit.GetOwner ~= nil then
 		MarkUnitKilled(killedUnit:GetOwner(), killedUnit:GetID());
-	end
-end
-
-local function GetCurrentEraType(player)
-	if player == nil then
-		return nil;
-	end
-
-	local eraValue = nil;
-	if player.GetEra ~= nil then
-		eraValue = player:GetEra();
-	end
-
-	if eraValue == nil and player.GetEras ~= nil then
-		local eras = player:GetEras();
-		if eras ~= nil and eras.GetEra ~= nil then
-			eraValue = eras:GetEra();
-		end
-	end
-
-	if eraValue == nil and player.GetCulture ~= nil then
-		local culture = player:GetCulture();
-		if culture ~= nil then
-			if culture.GetEra ~= nil then
-				eraValue = culture:GetEra();
-			elseif culture.GetCurrentEra ~= nil then
-				eraValue = culture:GetCurrentEra();
-			end
-		end
-	end
-
-	if type(eraValue) == "string" then
-		return eraValue;
-	end
-
-	if type(eraValue) ~= "number" or GameInfo.Eras == nil then
-		return nil;
-	end
-
-	-- GameInfo row indexing differs between gameplay builds. Prefer the
-	-- explicit Index column and then fall back to the normal row lookup.
-	for eraInfo in GameInfo.Eras() do
-		if eraInfo.Index == eraValue then
-			return eraInfo.EraType;
-		end
-	end
-
-	local eraInfo = GameInfo.Eras[eraValue];
-	if eraInfo == nil then
-		eraInfo = GameInfo.Eras[eraValue + 1];
-	end
-	return eraInfo ~= nil and eraInfo.EraType or nil;
-end
-
-local function GetCurrentEraStep(player)
-	local eraType = GetCurrentEraType(player);
-	local eraStep = ERA_INDEX_BY_TYPE[eraType];
-	if eraStep == nil then
-		if eraType ~= nil then
-			print("[Shirobana] Warning: unsupported era " .. tostring(eraType));
-		end
-		return nil, eraType;
-	end
-
-	return eraStep - 1, eraType;
-end
-
-local function ApplyMissingEraCombat(playerID)
-	if not IsShirobana(playerID) then
-		return;
-	end
-
-	local player = Players[playerID];
-	if player == nil then
-		return;
-	end
-
-	local currentStep, eraType = GetCurrentEraStep(player);
-	if currentStep == nil then
-		return;
-	end
-
-	local appliedStep = tonumber(player:GetProperty(SHIROBANA_ERA_PROGRESS_PROPERTY)) or 0;
-	if currentStep <= appliedStep then
-		return;
-	end
-
-	local addedSteps = 0;
-	for step = appliedStep + 1, currentStep do
-		local eraName = ERA_ORDER[step + 1];
-		local modifierID = ERA_COMBAT_MODIFIERS[eraName];
-		if modifierID == nil then
-			print("[Shirobana] Warning: no combat modifier for era " .. tostring(eraName));
-			break;
-		end
-
-		-- Each era has a distinct modifier/ability chain, so every attach is
-		-- an independent +15 base-combat-strength contribution.
-		player:AttachModifierByID(modifierID);
-		appliedStep = step;
-		addedSteps = addedSteps + 1;
-	end
-
-	player:SetProperty(SHIROBANA_ERA_PROGRESS_PROPERTY, appliedStep);
-	if addedSteps > 0 then
-		print("[Shirobana] Applied " .. tostring(addedSteps) .. " era combat increase(s) for player " .. tostring(playerID) .. "; current era " .. tostring(eraType) .. ", total base combat +" .. tostring(appliedStep * SHIROBANA_ERA_COMBAT_AMOUNT));
 	end
 end
 
@@ -321,9 +173,6 @@ local function OnCityAddedToMap(playerID, cityID, cityX, cityY)
 		return;
 	end
 
-	-- The first city is the capital. Prefer the city object when it is already
-	-- available; the event coordinates are the early-game fallback when the
-	-- player city collection has not finished initializing yet.
 	local city = nil;
 	if CityManager ~= nil and CityManager.GetCity ~= nil then
 		city = CityManager.GetCity(playerID, cityID);
@@ -338,15 +187,7 @@ end
 local function OnPlayerTurnActivated(playerID)
 	if IsShirobana(playerID) then
 		EnsureShirobanaUnit(playerID, false);
-		-- Also repairs saves or contexts where PlayerEraChanged was missed.
-		ApplyMissingEraCombat(playerID);
 	end
-end
-
-local function OnPlayerEraChanged(playerID)
-	-- Read the era back from the player instead of trusting the event payload;
-	-- this keeps the same path safe across gameplay event signatures.
-	ApplyMissingEraCombat(playerID);
 end
 
 local function OnTurnBegin()
@@ -357,30 +198,20 @@ local function OnTurnBegin()
 	for _, playerID in ipairs(PlayerManager.GetAliveIDs()) do
 		if IsShirobana(playerID) then
 			EnsureShirobanaUnit(playerID, false);
-			ApplyMissingEraCombat(playerID);
 		end
 	end
 end
 
 Events.PlayerTurnActivated.Add(OnPlayerTurnActivated);
-if Events.PlayerEraChanged ~= nil then
-	Events.PlayerEraChanged.Add(OnPlayerEraChanged);
-end
 if Events.CityAddedToMap ~= nil then
 	Events.CityAddedToMap.Add(OnCityAddedToMap);
 end
 if Events.TurnBegin ~= nil then
 	Events.TurnBegin.Add(OnTurnBegin);
 end
-
--- This event is available in current Civ6 gameplay contexts. The guard keeps
--- the script loadable in older rule-set builds that expose it only to UI Lua.
 if Events.UnitKilledInCombat ~= nil then
 	Events.UnitKilledInCombat.Add(OnUnitKilledInCombat);
 end
-
--- This catches removals that bypass the combat event. The tracked unit ID
--- prevents ordinary map removals from creating a replacement.
 if Events.UnitRemovedFromMap ~= nil then
 	Events.UnitRemovedFromMap.Add(OnUnitRemovedFromMap);
 end
