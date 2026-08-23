@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebSearch",
-      "Bash(ls -la \"D:/steam/steamapps/workshop/content/289070/2986373287\")",
-      "Read(//d/steam/steamapps/workshop/content/289070/2986373287/**)"
-    ]
-  }
-}
