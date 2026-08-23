@@ -17,6 +17,7 @@
 	<UnitAiInfos>
 		<Row UnitType="UNIT_SHIROBANA" AiType="UNITAI_COMBAT"/>
 		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_MELEE"/>
 		<Row UnitType="UNIT_SHIROBANA" AiType="UNITTYPE_LAND_COMBAT"/>
 
 		<Row UnitType="UNIT_SHIROBANA_GHOST" AiType="UNITAI_COMBAT"/>
@@ -31,8 +32,9 @@
 
 	<TypeTags>
 		<Row Type="UNIT_SHIROBANA" Tag="CLASS_RANGED"/>
-			<Row Type="UNIT_SHIROBANA" Tag="CLASS_SHIROBANA"/>
+		<Row Type="UNIT_SHIROBANA" Tag="CLASS_SHIROBANA"/>
 		<Row Type="UNIT_SHIROBANA_GHOST" Tag="CLASS_RANGED"/>
+		<Row Type="UNIT_SHIROBANA_GHOST" Tag="CLASS_SHIROBANA_GHOST"/>
 
 	</TypeTags>
 
@@ -41,33 +43,33 @@
 		<Row UnitType="UNIT_SHIROBANA" 
 			 Cost="40" 
 			 Maintenance="0" 
-			 BaseMoves="20" 
-			 BaseSightRange="6" 
+			 BaseMoves="10" 
+			 BaseSightRange="10" 
 			 ZoneOfControl="true" 
 			 Domain="DOMAIN_LAND" 
 			 Combat="25" RangedCombat="35" 
 			 Range="5" FormationClass="FORMATION_CLASS_LAND_COMBAT" 
 			 PromotionClass="PROMOTION_CLASS_RANGED" AdvisorType="ADVISOR_CONQUEST" 
 			 Name="LOC_UNIT_SHIROBANA_NAME" Description="LOC_UNIT_SHIROBANA_DESCRIPTION" 
-			 TraitType="TRAIT_UNIT_SHIROBANA" CanCapture="False" CanTrain="False"/>
+			 TraitType="TRAIT_UNIT_SHIROBANA" CanTrain="1"/>
 
 		<Row UnitType="UNIT_SHIROBANA_GHOST"
-			 Cost="50"
+			 Cost="20"
 			 Maintenance="0"
-			 BaseMoves="3"
-			 BaseSightRange="4"
+			 BaseMoves="2"
+			 BaseSightRange="6"
 			 ZoneOfControl="true"
 			 Domain="DOMAIN_LAND"
-			 Combat="25"
-			 RangedCombat="35"
-			 Range="5"
+			 Combat="15"
+			 RangedCombat="20"
+			 Range="2"
 			 FormationClass="FORMATION_CLASS_LAND_COMBAT"
 			 PromotionClass="PROMOTION_CLASS_RANGED"
 			 AdvisorType="ADVISOR_CONQUEST"
 			 Name="LOC_UNIT_SHIROBANA_GHOST_NAME"
 			 Description="LOC_UNIT_SHIROBANA_GHOST_DESCRIPTION"
 			 PurchaseYield="YIELD_GOLD"
-			 TraitType="TRAIT_UNIT_SHIROBANA_GHOST"/>
+			 TraitType="TRAIT_UNIT_SHIROBANA_GHOST" CanTrain="1"/>
 
 	</Units>
 	<UnitRetreats_XP1>

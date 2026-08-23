@@ -490,6 +490,7 @@
 		<Element>
 			<libraryName text="LeaderFallback"/>
 			<relativePackagePaths>
+				<Element text="ShirobanaLeaderFallback"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

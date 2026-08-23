@@ -1,0 +1,57 @@
+Starting AssetCooker...
+Command line options are:
+   --help  : Show this text and stop
+
+   --cores <n> : Use at most n additional cores
+   --no_mt <n> : Use to disable multithreading (this stabilizes blp result across runs)
+   --platform  <name> : Specify platform to cook for.  Known platforms are:
+                          Windows
+                          iOS
+                          MacOS
+                          Linux
+                          XBone
+                          Switch
+                          PS4
+                          Stadia
+   --mode  <mode> : Specify mode to use cooker in.  Known modes are:
+                          XLP
+                          ArtDef
+                          Dependency
+
+   --pantry <path> : Specify root directory for assets.
+                Argument is a relative path from the current 
+                  working directory to the package location
+                  default is ../pantry 
+
+   --stewpot <path> : Specify root directory for BLP outputs.
+                Argument is a relative path from the current 
+                  working directory to the BLP location
+                  Default is ./BLP 
+
+   --banquet_hall <path> : Specify root directory for cooked ArtDefs.
+                Argument is a relative path from the current 
+                  working directory to the cooked ArtDefs location
+                  default is ./ArtDefs 
+
+   --dependency_root <path> : Specify root directory for cooked Dependency Files.
+                Argument is a relative path from the current 
+                  working directory to the cooked Dependency File location
+                  Default is current working directory.
+
+   --config <path> : Specify name of project config file.
+                Argument is a relative path from the current 
+                  working directory to the config file
+                  Default is ./Config.cfg
+
+   --layout <name> : Use a particular disk layout module.
+
+   --cores <n>  : Change temp heap size to n MB (default: 64)
+
+   --log_sizes  : Print verbose BLP statistics to the log.
+
+   --log_path <path> : Specify directory for logging.
+                Argument can be relative or absolute 
+                  Logging is disabled if no directory is specified 
+
+  Anything that is not a command line option is taken to be
+   a relative path to an XLP or ArtDef depending on mode.

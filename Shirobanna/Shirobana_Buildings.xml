@@ -29,4 +29,7 @@
 			 CitizenSlots="1"
 			 TraitType="TRAIT_BUILDING_SHIROBANA_SCHOOL"/>
 	</Buildings>
+	<Unit_BuildingPrereqs>
+		<Row Unit="UNIT_SHIROBANA_GHOST" PrereqBuilding="BUILDING_SHIROBANA_SCHOOL"/>
+	</Unit_BuildingPrereqs>
 </GameData>

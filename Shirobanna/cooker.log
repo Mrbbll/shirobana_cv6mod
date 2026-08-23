@@ -1,13 +1,13 @@
 Starting AssetCooker...
 Argument '--shaders' has been deprecated and is no longer used.
 XLP cook starting...
-C:\Users\asus\Documents\Firaxis ModBuddy\Civilization VI\Shirobanna\Shirobanna\XLPs\ShirobanaDDS.xlp
-Opened output file: C:\Users\asus\Documents\My Games\Sid Meier's Civilization VI\Mods\Shirobanna\Platforms\MacOS\BLPs/ShirobanaDDS.blp    For XLP: 'C:\Users\asus\Documents\Firaxis ModBuddy\Civilization VI\Shirobanna\Shirobanna\XLPs\ShirobanaDDS.xlp'
+C:\Users\asus\Documents\Firaxis ModBuddy\Civilization VI\Shirobanna\Shirobanna\XLPs\ShirobanaLeaderFallback.xlp
+Opened output file: C:\Users\asus\Documents\My Games\Sid Meier's Civilization VI\Mods\Shirobanna\Platforms\MacOS\BLPs/ShirobanaLeaderFallback.blp    For XLP: 'C:\Users\asus\Documents\Firaxis ModBuddy\Civilization VI\Shirobanna\Shirobanna\XLPs\ShirobanaLeaderFallback.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
-Starting 'ShirobanaDDS'
-Load finished for: 'ShirobanaDDS' in 0.034 seconds
-Cook finished for: 'ShirobanaDDS' in 0.131 seconds
-Disk write finished for: 'ShirobanaDDS' in 0.071 seconds
-Cleanup finished for: 'ShirobanaDDS' in 0.003 seconds
+Starting 'ShirobanaLeaderFallback'
+Load finished for: 'ShirobanaLeaderFallback' in 0.002 seconds
+Cook finished for: 'ShirobanaLeaderFallback' in 0.000 seconds
+Disk write finished for: 'ShirobanaLeaderFallback' in 0.064 seconds
+Cleanup finished for: 'ShirobanaLeaderFallback' in 0.000 seconds
 XLP cook completed with success.
-Cook completed in 0.248 seconds
+Cook completed in 0.075 seconds

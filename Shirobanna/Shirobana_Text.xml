@@ -8,16 +8,16 @@
 			<Text>+15 [ICON_Strength] 战斗力，来自时代强化</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SHIROBANA_ERA_ATK_NAME" Language="zh_Hans_CN">
-			<Text>每跨过一个时代，白花获得15点战斗力。</Text>
+			<Text>每跨过一个时代，白花获得15点战斗力加成。</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SHIROBANA_ERA_ATK_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>每跨过一个时代，白花获得15点战斗力。</Text>
+			<Text>每跨过一个时代，白花获得15点战斗力加成。</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_ABILITY_NAME" Language="zh_Hans_CN">
 			<Text>魂人</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVILIZATION_ABILITY_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>这是一个带有非自然力量的文明</Text>
+			<Text>这是一个带有非自然力量的文明，可以招募魂人</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_ABILITY_NAME" Language="zh_Hans_CN">
 			<Text>白花的能力</Text>
@@ -113,13 +113,13 @@
 			<Text>苍空</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_SHIROBANA_MALE_2" Language="zh_Hans_CN">
-			<Text>a</Text>
+			<Text>路人甲</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_SHIROBANA_MALE_3" Language="zh_Hans_CN">
-			<Text>b</Text>
+			<Text>路人乙</Text>
 		</Replace>
 		<Replace Tag="LOC_CITIZEN_SHIROBANA_MALE_4" Language="zh_Hans_CN">
-			<Text>c</Text>
+			<Text>路人丙</Text>
 		</Replace>
 
 		<Replace Tag="LOC_CITIZEN_SHIROBANA_FEMALE_1" Language="zh_Hans_CN">

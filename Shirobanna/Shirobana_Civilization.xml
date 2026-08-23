@@ -60,21 +60,23 @@
 	</PlayerColors>
 
 	<LoadingInfo>
-		<Row LeaderType="LEADER_SHIROBANA" ForegroundImage="IMG_LOADING_FOREGROUND.dds" BackgroundImage="IMG_LOADING_FOREGROUND.dds" EraText="LOC_LOADING_INFO_LEADER_DEFAULT" PlayDawnOfManAudio="1"/>
+		<Row LeaderType="LEADER_SHIROBANA" ForegroundImage="IMG_LOADING_FOREGROUND" BackgroundImage="IMG_LOADING_FOREGROUND" EraText="LOC_LOADING_INFO_LEADER_DEFAULT" PlayDawnOfManAudio="1"/>
 	</LoadingInfo>
 	<DiplomacyInfo>
-		<Row Type="LEADER_SHIROBANA" BackgroundImage="IMG_DIPLOMACY_FOREGROUND.dds"/>
+		<Row Type="LEADER_SHIROBANA" BackgroundImage="IMG_DIPLOMACY_FOREGROUND"/>
 	</DiplomacyInfo>
 
 	<TraitModifiers>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_FOOD_PER_POPULATION"/>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION"/>
 		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_GRANT_UNIT"/>
+		<Row TraitType="TRAIT_UNIT_SHIROBANA" ModifierId="SHIROBANA_DISABLE_WHITE_BUILD"/>
 	</TraitModifiers>
 	<Modifiers>
 		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
 		<Row ModifierId="SHIROBANA_FOOD_PER_POPULATION" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_POPULATION"/>
 		<Row ModifierId="SHIROBANA_GRANT_UNIT" ModifierType="MODIFIER_PLAYER_GRANT_UNIT_IN_CAPITAL" Permanent="true"/>
+		<Row ModifierId="SHIROBANA_DISABLE_WHITE_BUILD" ModifierType="MODIFIER_PLAYER_UNIT_BUILD_DISABLED"/>
 	</Modifiers>
 	<ModifierArguments>
 		<Row ModifierId="SHIROBANA_PRODUCTION_PER_POPULATION" Name="YieldType" Value="YIELD_PRODUCTION"/>
@@ -84,6 +86,7 @@
 		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="AllowUniqueOverride" Value="false"/>
 		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="Amount" Value="1"/>
 		<Row ModifierId="SHIROBANA_GRANT_UNIT" Name="UnitType" Value="UNIT_SHIROBANA"/>
+		<Row ModifierId="SHIROBANA_DISABLE_WHITE_BUILD" Name="UnitType" Value="UNIT_SHIROBANA"/>
 	</ModifierArguments>
 
 	<RequirementSets>
