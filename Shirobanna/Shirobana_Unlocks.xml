@@ -116,38 +116,38 @@
 	</Modifiers>
 
 	<ModifierArguments>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT2" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT3" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT4" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT5" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT6" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT7" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT8" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK2" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK3" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK4" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK5" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK6" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK7" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK8" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT2" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT3" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT4" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT5" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT6" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT7" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT8" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK2" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK3" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK4" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK5" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK6" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK7" Name="Amount" Value="15"/>
-		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK8" Name="Amount" Value="15"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT2" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT3" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT4" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT5" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT6" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT7" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_BASE_COMBAT8" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK2" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK3" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK4" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK5" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK6" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK7" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_ERA_COMBAT_ATK8" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT2" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT3" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT4" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT5" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT6" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT7" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_BASE_COMBAT8" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK2" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK3" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK4" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK5" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK6" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK7" Name="Amount" Value="10"/>
+		<Row ModifierId="SHIROBANA_GHOST_ERA_COMBAT_ATK8" Name="Amount" Value="10"/>
 	</ModifierArguments>
 
 	<RequirementSets>

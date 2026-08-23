@@ -6,8 +6,22 @@
     <Guid>3b1e4765-dc38-4c49-97e1-3fcb33f1df8c</Guid>
     <ProjectGuid>c21d4018-3016-4b3c-8a15-d88fb4f6ef9c</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>a mod for cv6</Teaser>
-    <Description>a mod for cv6</Description>
+    <Teaser>将《保健室老师和沉迷吹泡泡的助手》中的白花搬到了文明6</Teaser>
+    <Description>将《保健室老师和沉迷吹泡泡的助手》中的白花搬到了文明6
+
+新增单位：
+白花
+--初始建城获得，会一直伴随着你征服世界，初始攻击25,远程攻击35，攻击会随时代推进提升（每次时代推进攻击加20，远程攻击加10）
+
+魂人
+--建造彩香女子学院获得，初始攻击20,远程攻击20，攻击会随时代推进提升（同白花）
+
+新增学院区域建筑：
+彩香女子学院：
+提供6科技值2文化值，在学院中建成后会解锁魂人单位。
+
+文明特质：
+由于居民中有魂人，吃的少，干活多，每人口加1粮食2生产力</Description>
     <Authors>Mr_bl</Authors>
     <SpecialThanks>
     </SpecialThanks>
